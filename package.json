@@ -1,0 +1,50 @@
+{
+  "name": "inputtip-cursor-sync",
+  "displayName": "InputTip Cursor Sync",
+  "version": "0.0.6",
+  "publisher": "momoca",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/momoca/inputtip-cursor-sync.git"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "main": "./out/extension.js",
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "contributes": {
+    "configuration": {
+      "title": "InputTip Cursor Sync",
+      "properties": {
+        "inputTipCursorSync.cnColor": {
+          "type": "string",
+          "default": "#ff4d4f",
+          "description": "Cursor color when InputTip state is CN."
+        },
+        "inputTipCursorSync.enColor": {
+          "type": "string",
+          "default": "#4096ff",
+          "description": "Cursor color when InputTip state is EN."
+        },
+        "inputTipCursorSync.capsColor": {
+          "type": "string",
+          "default": "#52c41a",
+          "description": "Cursor color when InputTip state is Caps."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "package": "vsce package",
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.0.0"
+  }
+}
