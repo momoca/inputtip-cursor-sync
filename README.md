@@ -65,9 +65,11 @@
 
 ## 与 InputTip 集成
 
-如果你正在使用 `InputTip` 和 `AutoHotkey`，可以创建一个 `plugins/custom-ime-sync.ahk` 文件，然后在主插件文件中引入它。
+原作者的方法更优雅，以下方案已经不推荐了。
 
-示例：
+~~如果你正在使用 `InputTip` 和 `AutoHotkey`，可以创建一个 `plugins/custom-ime-sync.ahk` 文件，然后在主插件文件中引入它。~~
+
+~~示例：~~
 
 ```autohotkey
 global __sync_last_state := ""
@@ -100,7 +102,7 @@ BroadcastImeState() {
 }
 ```
 
-然后在 `InputTip.plugin.ahk` 中加入：
+~~然后在 `InputTip.plugin.ahk` 中加入：~~
 
 ```autohotkey
 #Include custom-ime-sync.ahk
