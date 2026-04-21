@@ -1,6 +1,6 @@
 # InputTip Cursor Sync
 
-`InputTip Cursor Sync` 是一个运行在 Windows 上的 VS Code 扩展，用于根据当前输入状态自动切换 VS Code 中与输入焦点相关的颜色。
+[InputTip Cursor Sync](https://marketplace.visualstudio.com/items?itemName=momoca.inputtip-cursor-sync) 是一个运行在 Windows 上的 VS Code 扩展，用于根据当前输入状态自动切换 VS Code 中与输入焦点相关的颜色。
 
 - `CN`：中文输入状态
 - `EN`：英文输入状态
